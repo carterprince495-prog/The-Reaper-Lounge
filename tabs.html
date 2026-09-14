@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Gridiron League Madden standings, recent results, and playoff race.">
+
+  <title>Standings | Gridiron League</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+<header class="site-header">
+
+  <nav class="nav container"
+       aria-label="Primary navigation">
+
+    <a class="logo" href="index.html">
+      GRIDIRON <span>LEAGUE</span>
+    </a>
+
+    <button class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu">
+      Menu
+    </button>
+
+    <div id="site-menu" class="nav-links">
+
+      <a href="index.html">
+        Home
+      </a>
+
+      <a class="active" href="standings.html">
+        Standings
+      </a>
+
+      <a href="index.html#rules">
+        League Rules
+      </a>
+
+      <a href="index.html#contact">
+        Contact
+      </a>
+
+    </div>
+
+  </nav>
+
+</header>
+
+
+<main>
+
+
+<section class="page-hero">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      SEASON 4 • WEEK 10
+    </p>
+
+    <h1>
+      The playoff race.
+    </h1>
+
+    <p>
+      Every win matters. Sort the table by wins,
+      losses, or point differential to scout the field.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<section class="section container"
+         aria-labelledby="standings-title">
+
+  <div class="section-heading">
+
+    <div>
+
+      <p class="eyebrow">
+        CURRENT TABLE
+      </p>
+
+      <h2 id="standings-title">
+        League standings
+      </h2>
+
+    </div>
+
+
+    <div class="filter-buttons"
+         aria-label="Sort standings">
+
+      <button class="filter active-filter"
+              type="button"
+              data-sort="rank">
+        Rank
+      </button>
+
+      <button class="filter"
+              type="button"
+              data-sort="wins">
+        Wins
+      </button>
+
+      <button class="filter"
+              type="button"
+              data-sort="losses">
+        Losses
+      </button>
+
+      <button class="filter"
+              type="button"
+              data-sort="diff">
+        Diff
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="table-wrap">
+
+    <table id="standings-table">
+
+      <caption class="sr-only">
+        Season 4 Madden league standings
+      </caption>
+
+      <thead>
+
+        <tr>
+
+          <th scope="col">Rank</th>
+
+          <th scope="col">Team</th>
+
+          <th scope="col">Owner</th>
+
+          <th scope="col">W</th>
+
+          <th scope="col">L</th>
+
+          <th scope="col">PF</th>
+
+          <th scope="col">PA</th>
+
+          <th scope="col">Diff</th>
+
+        </tr>
+
+      </thead>
+
+
+      <tbody>
+
+        <tr data-wins="7"
+            data-losses="2"
+            data-diff="31">
+
+          <td>1</td>
+          <td><strong>Cowboys</strong></td>
+          <td>Marcus</td>
+          <td>7</td>
+          <td>2</td>
+          <td>268</td>
+          <td>237</td>
+          <td>+31</td>
+
+        </tr>
+
+
+        <tr data-wins="6"
+            data-losses="3"
+            data-diff="24">
+
+          <td>2</td>
+          <td><strong>Chiefs</strong></td>
+          <td>Dre</td>
+          <td>6</td>
+          <td>3</td>
+          <td>251</td>
+          <td>227</td>
+          <td>+24</td>
+
+        </tr>
+
+
+        <tr data-wins="6"
+            data-losses="3"
+            data-diff="18">
+
+          <td>3</td>
+          <td><strong>Eagles</strong></td>
+          <td>Jalen</td>
+          <td>6</td>
+          <td>3</td>
+          <td>244</td>
+          <td>226</td>
+          <td>+18</td>
+
+        </tr>
+
+
+        <tr data-wins="5"
+            data-losses="4"
+            data-diff="11">
+
+          <td>4</td>
+          <td><strong>Ravens</strong></td>
+          <td>Chris</td>
+          <td>5</td>
+          <td>4</td>
+          <td>239</td>
+          <td>228</td>
+          <td>+11</td>
+
+        </tr>
+
+
+        <tr data-wins="5"
+            data-losses="4"
+            data-diff="4">
+
+          <td>5</td>
+          <td><strong>49ers</strong></td>
+          <td>Ty</td>
+          <td>5</td>
+          <td>4</td>
+          <td>231</td>
+          <td>227</td>
+          <td>+4</td>
+
+        </tr>
+
+
+        <tr data-wins="4"
+            data-losses="5"
+            data-diff="-3">
+
+          <td>6</td>
+          <td><strong>Bills</strong></td>
+          <td>Andre</td>
+          <td>4</td>
+          <td>5</td>
+          <td>225</td>
+          <td>228</td>
+          <td>-3</td>
+
+        </tr>
+
+
+        <tr data-wins="3"
+            data-losses="6"
+            data-diff="-14">
+
+          <td>7</td>
+          <td><strong>Lions</strong></td>
+          <td>Devon</td>
+          <td>3</td>
+          <td>6</td>
+          <td>218</td>
+          <td>232</td>
+          <td>-14</td>
+
+        </tr>
+
+
+        <tr data-wins="2"
+            data-losses="7"
+            data-diff="-27">
+
+          <td>8</td>
+          <td><strong>Packers</strong></td>
+          <td>Jay</td>
+          <td>2</td>
+          <td>7</td>
+          <td>204</td>
+          <td>231</td>
+          <td>-27</td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+  <p id="sort-status"
+     class="sr-only"
+     aria-live="polite">
+    Standings shown by rank.
+  </p>
+
+</section>
+
+
+
+<section class="section dark-section"
+         aria-labelledby="results-title">
+
+  <div class="container">
+
+    <p class="eyebrow">
+      RECENT RESULTS
+    </p>
+
+    <h2 id="results-title">
+      Week 9 recap
+    </h2>
+
+
+    <div class="results-grid">
+
+      <article class="result">
+
+        <span>FINAL</span>
+
+        <h3>
+          Cowboys 31 — 24 Ravens
+        </h3>
+
+        <p>
+          Dallas scored 14 unanswered in the fourth quarter.
+        </p>
+
+      </article>
+
+
+      <article class="result">
+
+        <span>FINAL</span>
+
+        <h3>
+          Chiefs 27 — 20 Bills
+        </h3>
+
+        <p>
+          Kansas City forced three turnovers in a tight road win.
+        </p>
+
+      </article>
+
+
+      <article class="result">
+
+        <span>FINAL</span>
+
+        <h3>
+          Eagles 28 — 17 Lions
+        </h3>
+
+        <p>
+          Philadelphia controlled the clock with a
+          190-yard rushing day.
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="container footer-grid">
+
+    <div>
+
+      <strong>
+        GRIDIRON LEAGUE
+      </strong>
+
+      <p>
+        Madden community league • Season 4
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <p>
+        <a href="index.html">
+          Back to home
+        </a>
+      </p>
+
+      <p>
+        © 2027 The Reaper Lounge
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
